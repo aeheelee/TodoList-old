@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import GlobalStyle from './styles/GlobalStyle';
+import TodoTemplate from "./components/TodoTemplate";
+import TodoHead from "./components/TodoHead";
+import TodoList from "./components/TodoList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <GlobalStyle />
+      <TodoTemplate>
+        <TodoHead />
+        <TodoList />
+      </TodoTemplate>
+    </>
+  )
 }
+
+// const LikeButton = () => { //함수컴포넌트
+//   const [liked, setLiked] = React.useState(flase); //구조분해할당
+//   if (liked) {
+//     return 'You liked this.'
+//   }
+//   return (
+//       <button onClick={() => { setLiked(true); }}>Like</button>
+//   )
+// }
 
 export default App;
