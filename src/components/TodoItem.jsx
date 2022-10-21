@@ -4,7 +4,6 @@ import { MdDone, MdDelete } from 'react-icons/md';
 
 const Remove = styled.div`
   display: none;  
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   color: #dee2e6;

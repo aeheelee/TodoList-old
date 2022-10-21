@@ -16,14 +16,4 @@ function App() {
   )
 }
 
-// const LikeButton = () => { //함수컴포넌트
-//   const [liked, setLiked] = React.useState(flase); //구조분해할당
-//   if (liked) {
-//     return 'You liked this.'
-//   }
-//   return (
-//       <button onClick={() => { setLiked(true); }}>Like</button>
-//   )
-// }
-
 export default App;
